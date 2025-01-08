@@ -22,10 +22,10 @@ body{
 }
 
 
-img{
+.logoweb{
+  position: relative;
   width: 100px;
   height: 100px;
-  margin-left: 150px;
   object-fit: cover;
   margin-right: -100px;
  
@@ -45,10 +45,9 @@ img{
 
 
 .nav-link{
-  color: white !important;
-  
-  
+  color: white !important ;
 }
+
 
 
 
@@ -112,3 +111,227 @@ img{
   color: white;
 }
 
+.webpage{
+  padding-top: 150px;
+  padding-left: 10px;
+}
+.content
+{
+ 
+    display: flex;
+    width: 100%;
+} 
+
+.txt{
+ width: 50%;
+
+   
+    
+
+}
+
+.image{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+  width: 60%;
+ 
+  transition: 0.5s;
+  object-fit: cover;
+  height: 100%;
+ 
+}
+
+.content img{
+ height: 300px;
+ width: auto;
+}
+
+.comp{
+  font-size: 20px;
+}
+.progressbar{
+  display: flex;
+  width: 100%;
+}
+.country{
+  width: 50%;
+  font-size: 25px;
+  color: blue;
+}
+
+
+.circular{
+  position: relative;
+  margin-left: auto;
+  margin-right: 50px;
+  height: 130px;
+  width: 130px;
+  background-color:  #FFFFFF;
+  border-radius: 50%; 
+  display: grid;
+  place-items: center;
+ 
+}
+
+.circular:before{
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  border-radius: 50%;
+  background-color: white;
+ 
+
+
+
+}
+
+.value-circular{
+  position: relative;
+  font-family: "Poppins",sans-serif;
+  font-size: 30px;
+}
+.courses{
+  background-color: red;
+  color: white;
+  width: fit-content;
+  padding-inline: 20px 20px;
+ margin-top: 25px;
+ padding-top: 10px;
+ padding-bottom: 0.5px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 20px;
+}
+
+.courses:hover{
+  cursor: pointer;
+}
+.courselist{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+ 
+ 
+}
+
+.li{
+
+  
+  width: 75%;
+    word-spacing: 10px;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 25px;
+    border-radius: 10px;
+   
+  
+    background:  #333;
+    
+   
+}
+
+.l{
+  justify-content: center;
+ word-spacing: 10px;
+ display: flex;
+ font-size: 20px;
+ box-sizing: border-box;
+ padding-top: 10px;
+ line-height: 25px;
+ border-radius: 10px;
+ padding-right: 10px;
+ background:   #333;
+ border-top:2px solid #FF5F6D ;
+ border-bottom: 2px solid #FF5F6D;
+ color: white;
+ margin-right: 0px;
+ 
+ 
+}
+
+
+
+  
+  
+  
+ 
+
+
+.l:hover{
+  background: linear-gradient(90deg in oklab,#FF512F , #DD2476);
+  transform: translateY(-15%);
+}
+
+.courselogo{
+  width: 50px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  object-fit: cover;
+ 
+  
+}
+.coursetext{
+  padding-top: 10px;
+  justify-content: right;
+}
+
+.l .coursetext{
+  text-align: right;
+}
+
+.teacher{
+  text-align: center;
+}
+
+.teachertxt{
+  margin-top: 50px;
+  font-size: 32px;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+
+.block{
+  height: 100%;
+  width: 20%;
+  border: 2px solid black;
+  margin-right: 20px;
+  background: #FF512F;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.teach{
+  border-radius: 100%;
+  height: 100px;
+ width: 100px;
+ padding-top: 5px;
+ object-fit: cover;
+
+
+}
