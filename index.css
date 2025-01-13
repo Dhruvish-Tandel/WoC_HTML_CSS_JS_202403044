@@ -35,11 +35,12 @@ body{
 .navbar{
   width: 100%;
  margin: 0px auto ;
-  position: absolute;
+  position: fixed;
   height: 100px;
 
  align-items: center;
  justify-content: center;
+ z-index: 6;
 }
 
 
