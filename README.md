@@ -10,4 +10,4 @@
 
 2. ABOUT US PAGE
     [Features] :
-    * Image of different shape[irregular chape image]
+    * Image of different shape[irregular shape image]
