@@ -240,8 +240,12 @@
  margin-top: 100px;
  color: white;
  border-top-left-radius: 125px;
+ 
   
  
+}
+.footer{
+  margin-left: 10px;
 }
 
 .row{
