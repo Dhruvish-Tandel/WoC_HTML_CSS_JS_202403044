@@ -18,9 +18,6 @@ function loadReviews() {
   });
 
 
-  if (reviews.length > 0) {
-    carouselInner.classList.add('active');
-  }
 }
 
 window.onload = loadReviews;
