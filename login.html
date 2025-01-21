@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up</title>
+    <link rel="stylesheet" href="login.css" >
+    
+</head>
+<body>
+
+    <div class="webpage">
+    
+        <div class="lform login">
+
+            <h2 class="animation" style="--D:0;--S:7"> Login </h2>
+            <form method="post">
+                <div class="box animation" style="--D:1;--S:8">
+                    <input type="text" id="namelogin" required>
+                    <label>Name </label>
+
+                </div>
+                <div class="box animation" style="--D:2;--S:9">
+                    <input type="email" id="emaillogin" required>
+                    <label>Email Address </label>
+
+                </div>
+                <div class="box animation" style="--D:3;--S:10">
+                    <input type="password" id="passwordlogin" required>
+                    <label>Password </label>
+
+                </div>
+
+               
+                <div class="box animation" style="--D:4;--S:11">
+                    <button class="btn1"  onclick="saveDatalogin()" type="button">Login </button>
+
+                </div>
+                <div class="slink animation" style="--D:5;--S:12">
+                    <p> Don't have an account? <a href="#" class="signuplink">Sign Up</a></p>
+
+                </div>
+
+
+
+            </form>
+        </div>
+        <div class="image">
+            <img src="Login1.png" class="image1">
+
+
+
+
+        </div>
+
+        <div class="lform signup">
+            <h2 class="animation" style="--D:6;--S:0" >Sign Up </h2>
+            <form method="post">
+                <div class="box animation" style="--D:7;--S:1">
+                    <input type="text" id="name" required>
+                    <label>Name </label>
+
+                </div>
+                <div class="box animation" style="--D:8;--S:2">
+                    <input type="email" id="email" required>
+                    <label>Email Address </label>
+
+                </div>
+                <div class="box animation" style="--D:9;--S:3">
+                    <input type="password" class="password" id="password" value="" required>
+                    <label>Password </label>
+
+                </div>
+                <div class="box animation" style="--D:10;--S:4">
+                    <input type="password"  class="confirmpassword" value="" required>
+                    <label>Confirm Password </label>
+
+                </div>
+                <div class="box animation" style="--D:11;--S:5">
+                    <button class="btn2" onclick="saveData()" type="submit">Sign Up </button>
+
+                </div>
+                <div class="llink animation" style="--D:12;--S:6">
+                    <p> Already have an account? <a href="#" class="loginlink">Login here</a></p>
+
+                </div>
+
+
+
+            </form>
+        </div>
+
+        <div class="image">
+            <img src="Login2.png" class="image2">
+
+
+
+
+        </div>
+    </div>
+
+    <script src="login.js"> </script>
+    
+</body>
+</html>
