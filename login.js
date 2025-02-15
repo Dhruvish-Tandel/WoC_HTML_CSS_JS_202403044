@@ -46,9 +46,9 @@ function saveData(){
    user_records=JSON.parse(localStorage.getItem("users") || "[]");
 
    if(name!="" && email!="" && password!="" && password==confirmpassword){
-
+    
     if(user_records.some((v)=>{
-        return v.email=email;
+        return v.email==email;
     })){
         alert("User already exists");
 
@@ -75,11 +75,14 @@ function saveDatalogin(){
     email=document.getElementById('emaillogin').value;
     password=document.getElementById('passwordlogin').value;
 
+
+    
+
     let user_loginrecords=new Array();
     user_loginrecords=JSON.parse(localStorage.getItem("users") || "[]");
     if(name!="" && email!="" && password!=""){
 
-
+        const userIndex = user_loginrecords.findIndex(user => user.name === name && user.email === email && user.password === password);
         if(user_loginrecords.some((v)=>{
             return v.name==name && v.email==email && v.password==password
         })){
@@ -92,6 +95,8 @@ function saveDatalogin(){
             localStorage.setItem("name",current_user.name);
             localStorage.setItem("email",current_user.email);
             localStorage.setItem("password",current_user.password);
+            localStorage.setItem("index",userIndex);
+            localStorage.setItem("isLoggedin",'true');
             window.location.href="index.html";
          
             
@@ -100,7 +105,7 @@ function saveDatalogin(){
 
         else{
             alert("Login Fail");
-            
+          
     }
 }
 
