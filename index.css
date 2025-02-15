@@ -117,7 +117,7 @@ body{
 }
 
 .webpage{
-  padding-top: 150px;
+  padding-top: 100px;
   padding-left: 10px;
 }
 .content
@@ -610,4 +610,183 @@ background-color: rgb(255,219,187,0.5);
   width: 50px;
   height: 50px;
   border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px; 
+  }
+
+  .nav-item {
+    padding: 10px 0; 
+  }
+
+  .courses {
+    font-size: 18px; 
+  }
+
+  .txt {
+    width: 100%; 
+    padding: 0; 
+  }
+
+  .image {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .circular {
+    margin: 20px auto; 
+  }
+
+  .li {
+    width: 100%; 
+    margin: 10px 0; 
+  }
+
+  .block {
+    width: 100%; 
+    margin: 10px 0; 
+  }
+
+  .chatbot {
+    width: 90%; 
+    bottom: 10px; 
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  
+
+  .row{
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .row .col.one{
+    text-align: center;
+  }
+ 
+
+  footer{
+    border-top-left-radius: 0px;
+  }
+  
+  
+
+  
+}
+
+@media (max-width: 1000px) {
+  #offcanvasButton {
+    display: '';
+    position: fixed;
+    pointer-events: initial;
+  }
+  
+  .navbar{
+    display: none;
+  }
+
+  .nav-lin{
+    color: black;
+  }
+
+  .nav-lin:hover{
+    color: blue;
+  }
+  
+
+  .progressbar{
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .country{
+    width: 100%;
+    text-align: center;
+  }
+
+  .circular{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .student{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .webpage{
+    padding-left: 0px;
+    padding-top: 75px;
+  }
+
+  .box{
+    min-width: 250px;
+    overflow-x: auto;
+   
+    height: 300px;
+  }
+
+  .box::-webkit-scrollbar{
+    width: 0;
+  }
+
+  .block{
+    height: 250px;
+  }
+
+  .box .block:hover {
+    transform: none;
+  
+  }
+
+  .box:hover > .box.block:not(:hover) {
+    filter: none;
+    transform: none;
+  }
+
+  .mobileresponsive{
+    display: flex;
+    position: fixed;
+    background-color: #24252A;
+    padding: auto;
+    height: 75px;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #offcanvasButton{
+    background: none;
+    font-size: 40px;
+    width: 50px;
+    border: none;
+  }
+
+  .mobileresponsive h3{
+    margin: auto;
+    color: white;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+.list{
+  display: flex;
+  flex-direction: column;
+}
+
+.li{
+  margin-top: 10px;
+}
+
+
 }

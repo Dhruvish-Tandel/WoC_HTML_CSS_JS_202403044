@@ -64,6 +64,47 @@
       </div>
     </nav>
   </div>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-itm">
+          <a class="nav-lin active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-itm">
+          <a class="nav-lin" href="Aboutus.html">ABOUT US</a>
+        </li>
+        <li class="nav-itm dropdown">
+          <a class="nav-lin dropdown-toggle" href="Courses.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            COURSES
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+            <li><a class="dropdown-item" href="#">Tally</a></li>
+            <li><a class="dropdown-item" href="#">Xero</a></li>
+            <li><a class="dropdown-item" href="#">Myob</a></li>
+          </ul>
+        </li>
+        <li class="nav-itm">
+          <a class="nav-lin" href="Review.html">REVIEWS</a>
+        </li>
+        <li class="nav-itm">
+          <a class="nav-lin" href="Inquiryus.html">INQUIRY US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Navbar Toggle Button for Mobile -->
+   <div class="mobileresponsive">
+  <button class="btn btn-primary" id="offcanvasButton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+    ☰ 
+  </button>
+  <h3>Homepage </h3>
+  </div>
   <div class="webpage">
     <div class="content">
       <div class="txt">
@@ -185,7 +226,7 @@
     </div>
     <footer>
       <div class="row">
-        <div class="col">
+        <div class="col one">
           <img src="logo.webp">
           <h4>Newtech Computer Education </h4>
 
@@ -197,7 +238,7 @@
             <a href="#"><img src="instagram.png"></a>
           </div>
         </div>
-        <div class="col">
+        <div class="col two">
           <h5> Quick Links </h5>
           <a href="" class="quicklinks">Home</a>
           <a href="" class="quicklinks">About Us</a>
