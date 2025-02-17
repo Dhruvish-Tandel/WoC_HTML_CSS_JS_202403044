@@ -127,7 +127,7 @@
 
 .centered{
     position: absolute;
-    top: 20%;
+    top: 100px;
     left: 50%;
     transform: translate(-50%,50%);
     font-size: 75px;
@@ -492,6 +492,16 @@ background-color: rgb(255,219,187,0.5);
   border-radius: 50px;
 }
 
+.lgot{
+  background-color: #0088a9;
+  color: white;
+  width: 70px;
+  border-radius: 20px;
+}
+
+.lgot:hover{
+  background-color: #00093c;
+}
 
 @media (max-width: 1000px) {
   #offcanvasButton {
