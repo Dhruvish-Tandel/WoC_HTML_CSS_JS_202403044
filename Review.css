@@ -116,23 +116,25 @@
 
   .webpage{
    
-  padding-top: 91px;
+  padding-top: 0px;
  
 }
 
 
 .bgimage{
   align-items: center;
+  height: 650px;
 }
 .image1{
-    height: 25%;
+    height: 350px;
     width: 100%;
+
   
 }
 
 .centered{
     position: absolute;
-    top: 20%;
+    top: 100px;
     left: 50%;
     transform: translate(-50%,50%);
     font-size: 75px;
@@ -150,7 +152,8 @@
    width: 90%;
    margin: auto;
    margin-top: 50px;
-   
+   justify-content: center;
+  
   
 }
 
@@ -170,19 +173,28 @@
     border-radius: 20px;
 }
 
-.reviewlogo{
-    position: absolute;
-    top: 90%;
-    height: 150px;
-    left: 43%;
+.reviewlogo {
+  position: absolute;
+  top: 500px;
+  height: 150px;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for the width of the image */
 }
+
+
 
 .carousel.slide{
     position: absolute;
-    width: 80%;
-   
-    top: 120%;
-    left: 10%;
+  width: 80%;
+   left: 10%;
+    top: 700px;
+    
+    text-align: center;
+}
+
+.carousel-inner{
+  width: 70%;
+  left: 15%;
 }
 
 .carousel.slide button{
@@ -206,11 +218,12 @@ span{
   display: inline-block;
 }
 
-.reviewbutton{
+.reviewbutton {
   position: absolute;
-text-align: center;
-  left: 37%;
-  padding-top: 100px;
+  text-align: center; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  padding-top: 80px; 
   color: orange;
 }
 
@@ -466,4 +479,142 @@ background-color: rgb(255,219,187,0.5);
   width: 50px;
   height: 50px;
   border-radius: 50px;
+}
+
+.lgot{
+  background-color: #0088a9;
+  color: white;
+  width: 70px;
+  border-radius: 20px;
+}
+
+.lgot:hover{
+  background-color: #00093c;
+}
+
+
+@media (max-width: 1000px) {
+  #offcanvasButton {
+    display: '';
+    position: fixed;
+    pointer-events: initial;
+  }
+  
+  .navbar{
+    display: none;
+  }
+
+  .nav-lin{
+    color: black;
+  }
+
+  .nav-lin:hover{
+    color: blue;
+  }
+
+  .mobileresponsive{
+    display: flex;
+    position: fixed;
+    background-color: #24252A;;
+    padding: auto;
+    height: 75px;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #offcanvasButton{
+    background: none;
+    font-size: 40px;
+    width: 50px;
+    border: none;
+  }
+
+  .mobileresponsive h3{
+    margin: auto;
+    color: white;
+  }
+
+  .webpage{
+    padding-top: 0px;
+  }
+
+  .image1{
+    height: 300px;
+  }
+  
+  .centered{
+    margin-left: auto;
+    margin-right: auto;
+    top: 130px;
+    font-size: 40px;
+  }
+  .centered.about{
+    top: 90px;
+    font-size: 20px;
+  }
+
+  .carousel.slide{
+    position: absolute;
+    width: 80%;
+   
+    top: 600px;
+    left: 10%;
+}
+
+  .carousel-inner{
+    width: 70%;
+    left: 15%;
+  }   
+
+  .revlogo{
+    text-align: center;
+  }
+
+  .reviewlogo{
+    position: absolute;
+    top: 450px;
+    height: 150px;
+  
+}
+
+}
+
+
+@media (max-width : 768px){
+
+    
+  .row{
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .row .col.one{
+    text-align: center;
+  }
+ 
+
+  footer{
+    border-top-left-radius: 0px;
+  }
+
+  .footer{
+    margin-left: 0px;
+  }
+
+ 
+}
+
+@media (max-width : 720px){
+
+   .reviewlogo{
+    top: 400px;
+   }
+   .reviewbutton{
+    padding-top: 1px;
+   }
+
+   .carousel-inner .carousel-item{
+    padding-top: 10px;
+   }
 }
