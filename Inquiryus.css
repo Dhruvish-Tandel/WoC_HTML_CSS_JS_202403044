@@ -116,19 +116,19 @@
   .webpage{
     
     
-  padding-top: 91px;
+  padding-top: 0px;
  
   background-color: whitesmoke;
 }
 
 .webpageform{
- 
+ width: 100%;
   justify-items: center;
 }
 
 
 .image1{
-    height: 25%;
+    height: 400px;
     width: 100%;
   
 }
@@ -136,17 +136,18 @@
 .centered{
     text-align: center;
     position: absolute;
-    top: 20%;
+    top: 150px;
     left: 50%;
     transform: translate(-50%,50%);
-    font-size: 65px;
+    font-size: 45px;
+    text-wrap: none;
     color: white;
 }
 
 .about{
    
     font-size: 25px;
-    transform: translate(-50%,400%);
+    transform: translate(-50%,300%);
 }
 
 .admissiontitle{
@@ -484,5 +485,129 @@ background-color: rgb(255,219,187,0.5);
   width: 50px;
   height: 50px;
   border-radius: 50px;
+}
+
+.lgot{
+  background-color: #0088a9;
+  color: white;
+  width: 70px;
+  border-radius: 20px;
+}
+
+.lgot:hover{
+  background-color: #00093c;
+}
+
+@media (max-width: 1000px) {
+  #offcanvasButton {
+    display: '';
+    position: fixed;
+    pointer-events: initial;
+  }
+  
+  .navbar{
+    display: none;
+  }
+
+  .nav-lin{
+    color: black;
+  }
+
+  .nav-lin:hover{
+    color: blue;
+  }
+
+  .mobileresponsive{
+    display: flex;
+    position: fixed;
+    background-color: #24252A;;
+    padding: auto;
+    height: 75px;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #offcanvasButton{
+    background: none;
+    font-size: 40px;
+    width: 50px;
+    border: none;
+  }
+
+  .mobileresponsive h3{
+    margin: auto;
+    color: white;
+  }
+
+  .webpage{
+    padding-top: 0px;
+  }
+  .webpageform{
+    justify-content: center;
+  }
+
+  .image1{
+    height: 300px;
+    margin-right: 0px;
+   
+  }
+  
+  .centered{
+    margin-left: auto;
+    margin-right: auto;
+    top: 130px;
+    font-size: 38px;
+    white-space: nowrap;
+  }
+  .centered.about{
+    top: 120px;
+    font-size: 20px;
+  }
+
+  .emailnumber{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .number{
+    padding-top: 10px;  
+    width: 100%;
+  }
+
+  .email{
+    width: 100%;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width :433px){
+  .form{
+    width: 100%;
+  }
+}
+
+@media (max-width : 768px){
+
+    
+  .row{
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .row .col.one{
+    text-align: center;
+  }
+ 
+
+  footer{
+    border-top-left-radius: 0px;
+  }
+
+  .footer{
+    margin-left: 0px;
+  }
+
+ 
 }
 
