@@ -113,30 +113,7 @@
     background-color: #ddd;
   }
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown:hover  .dropmenu{
-    display: block;
-  }
-  
-  .dropdowncourse:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdowncourse:hover  .dropmenu{
-    display: block;
-  }
 
-  .dropdownsort:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdownsort:hover  .dropmenu{
-    display: block;
-  }
   .nav-item:hover {
     background-color: #0088a9;
    border-radius: 30px;
@@ -552,38 +529,105 @@ background-color: rgb(255,219,187,0.5);
   position: absolute; 
   top: 470px;
    z-index: -1;
+   object-fit: cover;
 }
 
-.lgot{
-  background-color: #0088a9;
-  color: white;
-  width: 70px;
-  border-radius: 20px;
+.nav-itme{
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.lgot:hover{
-  background-color: #00093c;
-}
+.lgot {
+  padding: 1em 2.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+ }
+ 
+ .lgot::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .lgot:hover::before {
+  width: 105%;
+ }
+ 
+ .lgot:hover {
+  color: #111;
+ }
 
 
 @media (max-width: 1000px) {
+  
   #offcanvasButton {
     display: '';
     position: fixed;
     pointer-events: initial;
   }
+
+  .offcanvas-body{
+    padding-left: 0px;
+  }
+
+  .offcanvas-body .nav-lin{
+    text-decoration: none;
+  }
+  
   
   .navbar{
     display: none;
   }
 
-  .nav-lin{
-    color: black;
+  .nav-itm a{
+    
+    display: flex;
+    padding: 1.25rem 1.5rem;
+    justify-content: space-between;
+    transition: background-color .3s;
+    width: 330px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: 0px;
+   
   }
 
-  .nav-lin:hover{
-    color: blue;
+  .nav-itm a:hover{
+    background-color:  #eee;
   }
+
+  
+
+  .nav-lin{
+    color: black;
+    border-bottom: none;
+    font-weight: 600;
+
+  }
+
+  .nav-lin.active{
+    background: rgb(12,175,255,0.4);
+  }
+  
+
+
 
   .mobileresponsive{
     display: flex;
@@ -629,6 +673,7 @@ background-color: rgb(255,219,187,0.5);
  .cbg{
     top: 390px;
     height: 380px;
+    object-fit: fill;
   }
 
 }
@@ -668,6 +713,7 @@ background-color: rgb(255,219,187,0.5);
     #MyInput{
       padding: 10px;
     }
+    
     .dropdownsort{
       width: 160px;
       margin-top: 10px;
@@ -682,5 +728,14 @@ background-color: rgb(255,219,187,0.5);
     .dropdown-menu.menu li a{
       font-size: 15px;
     }
+
+}
+
+@media (max-height : 440px){
+
+  .chatbot{
+    width: 50%;
+    height: 70%;
+  }
 
 }
