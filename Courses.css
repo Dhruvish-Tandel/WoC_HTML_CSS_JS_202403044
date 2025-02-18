@@ -739,3 +739,14 @@ background-color: rgb(255,219,187,0.5);
   }
 
 }
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#642bff,#ff22e6);
+}
