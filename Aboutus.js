@@ -95,3 +95,27 @@ function toggleChat() {
     chatBody.appendChild(buttonDiv);
    
   }
+
+  window.addEventListener('scroll', function() {
+    const targetContent1 = document.getElementById('target-content_1');
+    const targetContent2 = document.getElementById('target-content_2');
+    const scrollPosition = window.scrollY; 
+    const triggerPosition1 = -4; 
+    const triggerPosition2=500;
+
+    if (scrollPosition >= triggerPosition1) {
+      targetContent1.classList.add('visible');
+      targetContent1.classList.remove('hidden');
+    } else {
+      targetContent1.classList.remove('visible');
+      targetContent1.classList.add('hidden');
+    }
+
+    if (scrollPosition >= triggerPosition2) {
+      targetContent2.classList.add('visible');
+      targetContent2.classList.remove('hidden');
+    } else {
+      targetContent2.classList.remove('visible');
+      targetContent2.classList.add('hidden');
+    }
+  });

@@ -126,3 +126,38 @@ function addYesNoButtons() {
   chatBody.appendChild(buttonDiv);
  
 }
+
+window.addEventListener('scroll', function() {
+  const targetContent1 = document.getElementById('target-content_1');
+  const targetContent2 = document.getElementById('target-content_2');
+  const targetContent3 = document.getElementById('target-content_3');
+  const scrollPosition = window.scrollY;
+  const triggerPosition1 = 100; 
+  const triggerPosition2=300;
+
+
+   
+
+  if (scrollPosition > triggerPosition1) {
+    targetContent1.classList.add('visible');
+    targetContent1.classList.remove('hidden');
+    targetContent2.classList.add('visible');
+    targetContent2.classList.remove('hidden');
+  } else {
+    targetContent1.classList.remove('visible');
+    targetContent1.classList.add('hidden');
+    targetContent2.classList.remove('visible');
+    targetContent2.classList.add('hidden');
+  }
+
+  if (scrollPosition > triggerPosition2) {
+    targetContent3.classList.add('visible');
+    targetContent3.classList.remove('hidden');
+  }
+  else{
+    targetContent3.classList.remove('visible');
+    targetContent3.classList.add('hidden');
+  }
+
+
+});

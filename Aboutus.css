@@ -721,5 +721,16 @@ background-color: rgb(255,219,187,0.5);
 }
 
 ::-webkit-scrollbar-thumb{
-  background: linear-gradient(#642bff,#ff22e6);
+  background: linear-gradient(#868F96 , #596164);
+}
+
+.visible {
+  opacity: 1; 
+  transform: translateY(0px); 
+  transition: opacity 0.5s ease, transform 0.7s ease; 
+}
+
+.hidden {
+  opacity: 0; 
+  transform: translateY(100px); 
 }
