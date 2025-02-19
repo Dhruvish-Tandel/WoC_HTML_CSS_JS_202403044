@@ -4,7 +4,6 @@ const search = () =>{
     const course=document.querySelectorAll(".course")
     const cname=storeitems.getElementsByTagName("h3")
 
-    localStorage.clear();
 
     for(var i=0;i<cname.length;i++){
 
