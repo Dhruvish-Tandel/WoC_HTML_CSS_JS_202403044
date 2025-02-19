@@ -25,7 +25,7 @@
     * Sorting dropdown menu.
     * Filtering options.
     * Progress tracking bar (visible after purchasing and opening a course).
-4. Reviews PAGE
+4. REVIEWS PAGE
     [Features] :
     * Interactive review carousel.
     * "Add Review" button utilizing a modal component.
