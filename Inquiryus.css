@@ -695,6 +695,13 @@ background-color: rgb(255,219,187,0.5);
 
 }
 
+@media (max-width:380px){
+
+  .centered{
+    font-size: 32px;
+  }
+}
+
 ::-webkit-scrollbar{
   width: 15px;
 }
