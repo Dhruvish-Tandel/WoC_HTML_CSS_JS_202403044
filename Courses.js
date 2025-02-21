@@ -139,6 +139,14 @@ function updateProgressBar(courseName) {
     const checkedCourses = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
 
     
+    for(let i=0;i<totalCourses;i++){
+        if(checkboxes[i].checked && i>0 && !checkboxes[i-1].checked){
+          checkboxes[i].checked=false;
+          alert("Selest the checkbox in Sequence.");
+          return;
+        }
+
+    }
 
     const progressPercentage = (checkedCourses / totalCourses) * 100;
 
