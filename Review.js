@@ -65,8 +65,8 @@ document.getElementById('reviewForm').addEventListener('submit', function (event
   const modal = bootstrap.Modal.getInstance(document.getElementById('reviewModal'));
   modal.hide();
 
-
-  document.getElementById('reviewForm').reset();
+  /*
+  document.getElementById('reviewForm').reset();*/
 });
 
 function logout() {
