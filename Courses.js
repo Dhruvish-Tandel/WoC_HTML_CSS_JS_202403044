@@ -142,7 +142,7 @@ function updateProgressBar(courseName) {
     for(let i=0;i<totalCourses;i++){
         if(checkboxes[i].checked && i>0 && !checkboxes[i-1].checked){
           checkboxes[i].checked=false;
-          alert("Selest the checkbox in Sequence.");
+          alert("Select the checkbox in Sequence.");
           return;
         }
 
@@ -211,22 +211,22 @@ function sortCourses(criteria, order) {
     const courseList = document.getElementById('course-list');
     const courses = Array.from(courseList.getElementsByClassName('course'));
 
-    // Show all courses by default
+  
     courses.forEach(course => {
-      course.style.display = 'block'; // Reset display
+      course.style.display = 'block'; 
     });
 
-    // Filter courses based on the selected type
+   
     if (type === 'paid') {
       courses.forEach(course => {
         if (course.getAttribute('data-type') !== 'paid') {
-          course.style.display = 'none'; // Hide non-paid courses
+          course.style.display = 'none'; 
         }
       });
     } else if (type === 'free') {
       courses.forEach(course => {
         if (course.getAttribute('data-type') !== 'free') {
-          course.style.display = 'none'; // Hide non-free courses
+          course.style.display = 'none'; 
         }
       });
     }
@@ -270,7 +270,7 @@ function addMessage(message, sender) {
   messageDiv.className = `message ${sender}-message`;
   messageDiv.innerHTML = message;
   chatBody.appendChild(messageDiv);
-  chatBody.scrollTop = chatBody.scrollHeight; // Scroll to the bottom
+  chatBody.scrollTop = chatBody.scrollHeight; 
 }
 
 function respondToUser (message) {
